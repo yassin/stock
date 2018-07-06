@@ -1,10 +1,12 @@
-#Project
-####Description
+# Project Stock
+
+#### 1. Description 
 this project is a (SpringBoot + mongoDB) Rest API
-###Installation
-#####install MongoDB 
+
+#### 2. Installation
+##### install MongoDB 
 install comunity server V4.0.0 https://www.mongodb.com/download-center#community
-#####start mongoDB
+##### start mongoDB
 shell 1 : ./<installDir>/bin/mongod --dbpath <path to new folder sb>
 mongoDB is started
 
@@ -15,8 +17,8 @@ db.createUser( { user: "stock-pharmacy-dev",
                  roles: [ { role: "clusterAdmin", db: "admin" },{ role: "readAnyDatabase", db: "admin" },"readWrite"] },
                { w: "majority" , wtimeout: 5000 } )
  
-###Run API
+#### Run API
 spring-boot:run -Dspring.profiles.active=dev 
 
-###Check API swagger
+#### 3.Check API swagger
 http://localhost:8080/swagger-ui.html
